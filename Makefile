@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 lint:
-	pylint --disable=R,C nlib csvcli
+	pylint --disable=R,C app
 
 test:
 	pytest -vv --cov-report term-missing --cov=nlib test_*.py
